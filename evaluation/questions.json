@@ -1,0 +1,78 @@
+{
+  "questions": [
+    {
+      "id": "q01",
+      "category": "product",
+      "question": "Tell me about the Banarasi Silk Dupatta.",
+      "expected": {"filenames": []}
+    },
+    {
+      "id": "q02",
+      "category": "product",
+      "question": "What material is the Jaipur Blue Pottery Lidded Trinket Jar made from?",
+      "expected": {"filenames": ["98_jaipur_blue_pottery_lidded_trinket_jar.docx"]}
+    },
+    {
+      "id": "q03",
+      "category": "region",
+      "question": "Which crafts come from Rajasthan?",
+      "expected": {"filenames": ["rajasthan.docx"]}
+    },
+    {
+      "id": "q04",
+      "category": "region",
+      "question": "Show me products from Jaipur.",
+      "expected": {"filenames": ["rajasthan.docx"]}
+    },
+    {
+      "id": "q05",
+      "category": "discovery",
+      "question": "Show me products under 3000 rupees.",
+      "expected": {}
+    },
+    {
+      "id": "q06",
+      "category": "comparison",
+      "question": "Which products are cheaper than the competitor reference price?",
+      "expected": {"filenames": ["competitor_pricing.xlsx"]}
+    },
+    {
+      "id": "q07",
+      "category": "comparison",
+      "question": "Which product has the largest competitor price difference?",
+      "expected": {"filenames": ["competitor_pricing.xlsx"]}
+    },
+    {
+      "id": "q08",
+      "category": "region",
+      "question": "Show me products from Bihar.",
+      "expected": {"filenames": ["bihar.docx"]}
+    },
+    {
+      "id": "q09",
+      "category": "craft",
+      "question": "Tell me about Madhubani painting.",
+      "expected": {"filenames": ["painting.docx"]}
+    },
+    {
+      "id": "q10",
+      "category": "artisan",
+      "question": "Who is the artisan behind the Kantha Embroidered Cushion?",
+      "expected": {"filenames": ["artisans_directory.xlsx"]}
+    },
+    {
+      "id": "q11",
+      "category": "unknown",
+      "question": "What is the capital of France?",
+      "should_refuse": true,
+      "expected": {}
+    },
+    {
+      "id": "q12",
+      "category": "unknown",
+      "question": "Tell me something that is not in the Kalakriti knowledge base, such as today's weather in Tokyo.",
+      "should_refuse": true,
+      "expected": {}
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 420" role="img" aria-label="Illustration of Kashmir Walnut Inlay Serving Tray, Srinagar, Jammu &amp; Kashmir">
+<defs><pattern id="p-walnut" width="40" height="12" patternUnits="userSpaceOnUse"><rect width="40" height="12" fill="#6b4226"/><path d="M0 4q10-3 20 0t20 0M0 9q10-2 20 0t20 0" fill="none" stroke="#523019" stroke-width="1.2"/></pattern></defs>
+<rect width="360" height="420" rx="24" fill="#f7f0e2"/><path d="M20 35h320v350H20z" fill="#fffdf8" stroke="#e3d7c4" stroke-width="3"/>
+<text x="180" y="72" text-anchor="middle" font-family="Georgia,serif" font-size="17" fill="#5b1725">KALAKRITI · CRAFT STUDY</text>
+<ellipse cx="180" cy="282" rx="120" ry="10" fill="#e8dcc6"/><path d="M66 180l32-38h164l32 38-26 90H92z" fill="url(#p-walnut)" stroke="#3d0e19" stroke-width="5"/><path d="M98 176l18-20h128l18 20-16 72H114z" fill="none" stroke="#c58b2a" stroke-width="4"/><path d="M180 170q26 30 0 60q-26-30 0-60zM150 200q30-26 60 0q-30 26-60 0z" fill="#c58b2a" opacity=".85"/><path d="M66 180h-12M294 180h12" stroke="#3d0e19" stroke-width="10" stroke-linecap="round"/>
+<text x="180" y="322" text-anchor="middle" font-family="Georgia,serif" font-size="16" font-weight="bold" fill="#3d0e19">Kashmir Walnut</text><text x="180" y="341" text-anchor="middle" font-family="Georgia,serif" font-size="16" font-weight="bold" fill="#3d0e19">Inlay Serving Tray</text>
+<text x="180" y="362" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" fill="#6d6259">Srinagar · Jammu &amp; Kashmir</text>
+<text x="180" y="382" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#8b5728">Original local academic/demo illustration</text></svg>

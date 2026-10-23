@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-label="Pottery artisan icon">
+  <defs><radialGradient id="g" cx="35%" cy="30%" r="80%">
+    <stop offset="0%" stop-color="#C58B2A"/><stop offset="100%" stop-color="#214A3A"/>
+  </radialGradient></defs>
+  <circle cx="120" cy="120" r="118" fill="url(#g)"/>
+  <circle cx="120" cy="120" r="112" fill="none" stroke="#C58B2A" stroke-width="2.5" opacity="0.8"/>
+  <g fill="none" stroke="#F7F0E2" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" transform="translate(60,60) scale(2.5)">
+    <circle cx="30" cy="20" r="18"/><circle cx="30" cy="20" r="6"/><line x1="30" y1="2" x2="30" y2="38"/><line x1="12" y1="20" x2="48" y2="20"/>
+  </g>
+</svg>

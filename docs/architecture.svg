@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 720" font-family="Georgia, 'Times New Roman', serif" role="img" aria-labelledby="t d">
+  <title id="t">Kalakriti RAG architecture</title>
+  <desc id="d">Offline ingestion pipeline (documents, Docling, validation, chunking, embeddings, Supabase pgvector) and online query pipeline (browser, FastAPI, retrieval with department filter, Ollama Cloud, cited answer).</desc>
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#6D6259"/></marker>
+    <style>
+      .box{fill:#FFFDF8;stroke:#E3D7C4;stroke-width:1.5}
+      .cloud{fill:#F1E9D6;stroke:#C58B2A;stroke-width:1.5}
+      .store{fill:#EAF0F5;stroke:#123B63;stroke-width:1.5}
+      .h{font-size:15px;font-weight:700;fill:#5B1725}
+      .t{font-size:12.5px;fill:#251D18;font-family:Inter,system-ui,sans-serif}
+      .s{font-size:11.5px;fill:#6D6259;font-family:Inter,system-ui,sans-serif}
+      .band{font-size:13px;font-weight:700;fill:#FFFDF8;letter-spacing:.04em}
+      .ln{stroke:#6D6259;stroke-width:1.6;fill:none;marker-end:url(#a)}
+    </style>
+  </defs>
+  <rect width="1100" height="720" fill="#F7F0E2"/>
+
+  <!-- ===== ingestion band ===== -->
+  <rect x="20" y="16" width="1060" height="26" rx="13" fill="#5B1725"/>
+  <text x="550" y="34" text-anchor="middle" class="band">1 · OFFLINE INGESTION  (python -m backend.ingest all — idempotent, resumable)</text>
+
+  <rect x="30" y="64" width="150" height="112" rx="14" class="box"/>
+  <text x="105" y="90" text-anchor="middle" class="h">data/raw/</text>
+  <text x="105" y="110" text-anchor="middle" class="t">&lt;department&gt;/*.pdf</text>
+  <text x="105" y="127" text-anchor="middle" class="t">*.docx  *.xlsx</text>
+  <text x="105" y="148" text-anchor="middle" class="s">departments found</text>
+  <text x="105" y="162" text-anchor="middle" class="s">dynamically</text>
+
+  <rect x="215" y="64" width="170" height="112" rx="14" class="box"/>
+  <text x="300" y="90" text-anchor="middle" class="h">Docling parse</text>
+  <text x="300" y="110" text-anchor="middle" class="t">PDF pages · tables</text>
+  <text x="300" y="127" text-anchor="middle" class="t">XLSX sheets · headings</text>
+  <text x="300" y="148" text-anchor="middle" class="s">bad file → logged,</text>
+  <text x="300" y="162" text-anchor="middle" class="s">batch continues</text>
+
+  <rect x="420" y="64" width="170" height="112" rx="14" class="box"/>
+  <text x="505" y="90" text-anchor="middle" class="h">Validate</text>
+  <text x="505" y="110" text-anchor="middle" class="t">vs independent extractor</text>
+  <text x="505" y="127" text-anchor="middle" class="t">word / number recall</text>
+  <text x="505" y="148" text-anchor="middle" class="s">tables · encoding ·</text>
+  <text x="505" y="162" text-anchor="middle" class="s">pages · sheets</text>
+
+  <rect x="625" y="64" width="190" height="112" rx="14" class="box"/>
+  <text x="720" y="90" text-anchor="middle" class="h">data/processed/</text>
+  <text x="720" y="110" text-anchor="middle" class="t">Markdown + manifest.json</text>
+  <text x="720" y="127" text-anchor="middle" class="t">reports/parsing_report</text>
+  <text x="720" y="148" text-anchor="middle" class="s">checksums make re-runs</text>
+  <text x="720" y="162" text-anchor="middle" class="s">skip unchanged files</text>
+
+  <rect x="850" y="64" width="220" height="112" rx="14" class="box"/>
+  <text x="960" y="90" text-anchor="middle" class="h">Chunk (structure-aware)</text>
+  <text x="960" y="110" text-anchor="middle" class="t">section · page · sheet aware</text>
+  <text x="960" y="127" text-anchor="middle" class="t">tables split, header repeated</text>
+  <text x="960" y="148" text-anchor="middle" class="s">400 tok / 60 overlap</text>
+  <text x="960" y="162" text-anchor="middle" class="s">+ metadata per chunk</text>
+
+  <path class="ln" d="M180 120H213"/><path class="ln" d="M385 120H418"/><path class="ln" d="M590 120H623"/><path class="ln" d="M815 120H848"/>
+  <path class="ln" d="M960 176V214"/>
+
+  <rect x="850" y="216" width="220" height="70" rx="14" class="box"/>
+  <text x="960" y="242" text-anchor="middle" class="h">Local embeddings</text>
+  <text x="960" y="262" text-anchor="middle" class="t">bge-small-en-v1.5 (384-d, free)</text>
+  <text x="960" y="277" text-anchor="middle" class="s">Ollama Cloud has no embedding models</text>
+  <path class="ln" d="M960 286V326"/>
+
+  <!-- ===== store ===== -->
+  <rect x="640" y="328" width="430" height="128" rx="14" class="store"/>
+  <text x="855" y="354" text-anchor="middle" class="h">Supabase Postgres + pgvector  (schema "rag")</text>
+  <text x="855" y="376" text-anchor="middle" class="t">data_kalakriti_chunks: text · jsonb metadata · vector(384)</text>
+  <text x="855" y="394" text-anchor="middle" class="t">HNSW cosine index + btree on department / document / type</text>
+  <text x="855" y="412" text-anchor="middle" class="t">documents registry: checksum · model · chunk config</text>
+  <text x="855" y="436" text-anchor="middle" class="s">private schema · RLS on · anon/authenticated revoked · server-side URL only</text>
+
+  <!-- ===== query band ===== -->
+  <rect x="20" y="474" width="1060" height="26" rx="13" fill="#123B63"/>
+  <text x="550" y="492" text-anchor="middle" class="band">2 · ONLINE QUERY  (FastAPI · one process serves API and UI)</text>
+
+  <rect x="30" y="524" width="170" height="112" rx="14" class="box"/>
+  <text x="115" y="550" text-anchor="middle" class="h">Assistant UI</text>
+  <text x="115" y="570" text-anchor="middle" class="t">question + department</text>
+  <text x="115" y="587" text-anchor="middle" class="t">sources · pages · sheets</text>
+  <text x="115" y="608" text-anchor="middle" class="s">DOM-only rendering</text>
+  <text x="115" y="622" text-anchor="middle" class="s">(no innerHTML)</text>
+
+  <rect x="235" y="524" width="190" height="112" rx="14" class="box"/>
+  <text x="330" y="550" text-anchor="middle" class="h">FastAPI</text>
+  <text x="330" y="570" text-anchor="middle" class="t">/query /departments /health</text>
+  <text x="330" y="587" text-anchor="middle" class="t">/documents /stats /sources</text>
+  <text x="330" y="608" text-anchor="middle" class="s">API key · rate limit · CORS</text>
+  <text x="330" y="622" text-anchor="middle" class="s">off-peak window · redaction</text>
+
+  <rect x="460" y="524" width="200" height="112" rx="14" class="box"/>
+  <text x="560" y="550" text-anchor="middle" class="h">Retrieve</text>
+  <text x="560" y="570" text-anchor="middle" class="t">department filter (or detect)</text>
+  <text x="560" y="587" text-anchor="middle" class="t">top-k → cut-off → dedupe</text>
+  <text x="560" y="608" text-anchor="middle" class="s">nothing relevant → no LLM</text>
+  <text x="560" y="622" text-anchor="middle" class="s">call, fixed “insufficient” reply</text>
+
+  <rect x="695" y="524" width="190" height="112" rx="14" class="cloud"/>
+  <text x="790" y="550" text-anchor="middle" class="h">Ollama Cloud LLM</text>
+  <text x="790" y="570" text-anchor="middle" class="t">gpt-oss:20b (configurable)</text>
+  <text x="790" y="587" text-anchor="middle" class="t">grounded prompt, [n] cites</text>
+  <text x="790" y="608" text-anchor="middle" class="s">1 concurrent · retry/backoff</text>
+  <text x="790" y="622" text-anchor="middle" class="s">Bearer key, server side only</text>
+
+  <rect x="920" y="524" width="150" height="112" rx="14" class="box"/>
+  <text x="995" y="550" text-anchor="middle" class="h">Answer</text>
+  <text x="995" y="570" text-anchor="middle" class="t">text + [n] markers</text>
+  <text x="995" y="587" text-anchor="middle" class="t">structured sources</text>
+  <text x="995" y="608" text-anchor="middle" class="s">cited vs retrieved-only</text>
+  <text x="995" y="622" text-anchor="middle" class="s">timings · filters applied</text>
+
+  <path class="ln" d="M200 580H233"/><path class="ln" d="M425 580H458"/><path class="ln" d="M660 580H693"/><path class="ln" d="M885 580H918"/>
+  <path class="ln" d="M560 524V442H638" stroke-dasharray="5 4"/>
+  <text x="470" y="434" class="s">vector search (filtered)</text>
+  <path class="ln" d="M995 636v30H115v-28" stroke-dasharray="5 4"/>
+  <text x="550" y="686" text-anchor="middle" class="s">response returns to the browser</text>
+</svg>

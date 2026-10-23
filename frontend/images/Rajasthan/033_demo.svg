@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 420" role="img" aria-label="Illustration of Rajasthani Blue Pottery Vase, Jaipur, Rajasthan">
+<defs><pattern id="p-blue" width="26" height="26" patternUnits="userSpaceOnUse"><rect width="26" height="26" fill="#eaf4f6"/><g transform="translate(13 13)"><circle r="3" fill="#123b63"/><path d="M0-9q4 4 0 6q-4-2 0-6zM0 9q4-4 0-6q-4 2 0 6zM-9 0q4-4 6 0q-2 4-6 0zM9 0q-4-4-6 0q2 4 6 0z" fill="#2f6fa3"/></g><path d="M0 0l4 4M26 0l-4 4M0 26l4-4M26 26l-4-4" stroke="#3a8f86" stroke-width="2"/></pattern></defs>
+<rect width="360" height="420" rx="24" fill="#f7f0e2"/><path d="M20 35h320v350H20z" fill="#fffdf8" stroke="#e3d7c4" stroke-width="3"/>
+<text x="180" y="72" text-anchor="middle" font-family="Georgia,serif" font-size="17" fill="#5b1725">KALAKRITI · CRAFT STUDY</text>
+<ellipse cx="180" cy="292" rx="70" ry="10" fill="#e8dcc6"/><path d="M156 110h48q-6 30 10 46q52 40 24 98q-12 28-58 34q-46-6-58-34q-28-58 24-98q16-16 10-46z" fill="url(#p-blue)" stroke="#123b63" stroke-width="6"/><ellipse cx="180" cy="110" rx="28" ry="7" fill="#fffdf8" stroke="#123b63" stroke-width="5"/><path d="M126 176h108M116 250h128" stroke="#123b63" stroke-width="5"/>
+<text x="180" y="330" text-anchor="middle" font-family="Georgia,serif" font-size="16" font-weight="bold" fill="#3d0e19">Rajasthani Blue Pottery Vase</text>
+<text x="180" y="356" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" fill="#6d6259">Jaipur · Rajasthan</text>
+<text x="180" y="376" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#8b5728">Original local academic/demo illustration</text></svg>

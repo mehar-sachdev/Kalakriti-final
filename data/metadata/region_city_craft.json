@@ -1,0 +1,484 @@
+[
+  {
+    "region": "Bihar",
+    "region_slug": "bihar",
+    "cities": [
+      {
+        "city": "Bhagalpur",
+        "crafts": [
+          "Painting",
+          "Textile"
+        ],
+        "product_ids": [
+          54,
+          59,
+          125,
+          126,
+          127,
+          128
+        ]
+      },
+      {
+        "city": "Darbhanga",
+        "crafts": [
+          "Basketry",
+          "Textile"
+        ],
+        "product_ids": [
+          52,
+          56,
+          60,
+          129,
+          130,
+          131,
+          132
+        ]
+      },
+      {
+        "city": "Madhubani",
+        "crafts": [
+          "Basketry",
+          "Painting"
+        ],
+        "product_ids": [
+          51,
+          55,
+          58,
+          121,
+          122,
+          123,
+          124
+        ]
+      },
+      {
+        "city": "Muzaffarpur",
+        "crafts": [
+          "Textile"
+        ],
+        "product_ids": [
+          53,
+          57
+        ]
+      }
+    ]
+  },
+  {
+    "region": "Gujarat",
+    "region_slug": "gujarat",
+    "cities": [
+      {
+        "city": "Ahmedabad",
+        "crafts": [
+          "Painting"
+        ],
+        "product_ids": [
+          27,
+          91,
+          92
+        ]
+      },
+      {
+        "city": "Bhuj",
+        "crafts": [
+          "Painting",
+          "Textile"
+        ],
+        "product_ids": [
+          85,
+          86,
+          87,
+          88
+        ]
+      },
+      {
+        "city": "Jamnagar",
+        "crafts": [
+          "Textile"
+        ],
+        "product_ids": [
+          22,
+          95,
+          96
+        ]
+      },
+      {
+        "city": "Kutch",
+        "crafts": [
+          "Leatherwork",
+          "Painting",
+          "Textile"
+        ],
+        "product_ids": [
+          21,
+          23,
+          25,
+          26,
+          28,
+          30,
+          133,
+          134
+        ]
+      },
+      {
+        "city": "Nirona",
+        "crafts": [
+          "Metalwork"
+        ],
+        "product_ids": [
+          29,
+          93,
+          94
+        ]
+      },
+      {
+        "city": "Patan",
+        "crafts": [
+          "Textile"
+        ],
+        "product_ids": [
+          24,
+          89,
+          90
+        ]
+      }
+    ]
+  },
+  {
+    "region": "Jammu & Kashmir",
+    "region_slug": "jammu-and-kashmir",
+    "cities": [
+      {
+        "city": "Baramulla",
+        "crafts": [
+          "Basketry",
+          "Textile"
+        ],
+        "product_ids": [
+          81,
+          82,
+          83,
+          84
+        ]
+      },
+      {
+        "city": "Jammu",
+        "crafts": [
+          "Painting",
+          "Textile"
+        ],
+        "product_ids": [
+          77,
+          78,
+          79,
+          80
+        ]
+      },
+      {
+        "city": "Kashmir Valley",
+        "crafts": [
+          "Textile"
+        ],
+        "product_ids": [
+          12,
+          15
+        ]
+      },
+      {
+        "city": "Srinagar",
+        "crafts": [
+          "Metalwork",
+          "Papier-mâché",
+          "Textile",
+          "Woodwork"
+        ],
+        "product_ids": [
+          11,
+          13,
+          14,
+          16,
+          17,
+          18,
+          19,
+          20,
+          73,
+          74,
+          75,
+          76,
+          135
+        ]
+      }
+    ]
+  },
+  {
+    "region": "Rajasthan",
+    "region_slug": "rajasthan",
+    "cities": [
+      {
+        "city": "Bagru",
+        "crafts": [
+          "Textile"
+        ],
+        "product_ids": [
+          32,
+          146
+        ]
+      },
+      {
+        "city": "Jaipur",
+        "crafts": [
+          "Jewellery",
+          "Pottery",
+          "Textile",
+          "Woodwork"
+        ],
+        "product_ids": [
+          31,
+          33,
+          36,
+          37,
+          97,
+          98,
+          99,
+          100,
+          136,
+          137
+        ]
+      },
+      {
+        "city": "Jodhpur",
+        "crafts": [
+          "Leatherwork",
+          "Metalwork"
+        ],
+        "product_ids": [
+          38,
+          40,
+          105,
+          106,
+          107,
+          108
+        ]
+      },
+      {
+        "city": "Kota",
+        "crafts": [
+          "Textile"
+        ],
+        "product_ids": [
+          39,
+          138
+        ]
+      },
+      {
+        "city": "Pratapgarh",
+        "crafts": [
+          "Jewellery"
+        ],
+        "product_ids": [
+          35,
+          139
+        ]
+      },
+      {
+        "city": "Sanganer",
+        "crafts": [
+          "Textile"
+        ],
+        "product_ids": [
+          34,
+          140
+        ]
+      },
+      {
+        "city": "Udaipur",
+        "crafts": [
+          "Painting",
+          "Textile"
+        ],
+        "product_ids": [
+          101,
+          102,
+          103,
+          104
+        ]
+      }
+    ]
+  },
+  {
+    "region": "Uttar Pradesh",
+    "region_slug": "uttar-pradesh",
+    "cities": [
+      {
+        "city": "Agra",
+        "crafts": [
+          "Leatherwork"
+        ],
+        "product_ids": [
+          69,
+          70
+        ]
+      },
+      {
+        "city": "Lucknow",
+        "crafts": [
+          "Textile"
+        ],
+        "product_ids": [
+          2,
+          5,
+          61,
+          62
+        ]
+      },
+      {
+        "city": "Mathura",
+        "crafts": [
+          "Pottery"
+        ],
+        "product_ids": [
+          9,
+          71,
+          72
+        ]
+      },
+      {
+        "city": "Mirzapur",
+        "crafts": [
+          "Textile"
+        ],
+        "product_ids": [
+          10,
+          65,
+          66
+        ]
+      },
+      {
+        "city": "Moradabad",
+        "crafts": [
+          "Metalwork"
+        ],
+        "product_ids": [
+          3,
+          141
+        ]
+      },
+      {
+        "city": "Prayagraj",
+        "crafts": [
+          "Metalwork"
+        ],
+        "product_ids": [
+          8,
+          142
+        ]
+      },
+      {
+        "city": "Saharanpur",
+        "crafts": [
+          "Woodwork"
+        ],
+        "product_ids": [
+          6,
+          67,
+          68
+        ]
+      },
+      {
+        "city": "Varanasi",
+        "crafts": [
+          "Textile"
+        ],
+        "product_ids": [
+          1,
+          4,
+          7,
+          63,
+          64
+        ]
+      }
+    ]
+  },
+  {
+    "region": "West Bengal",
+    "region_slug": "west-bengal",
+    "cities": [
+      {
+        "city": "Bankura",
+        "crafts": [
+          "Metalwork",
+          "Pottery"
+        ],
+        "product_ids": [
+          43,
+          48,
+          117,
+          118,
+          119,
+          120
+        ]
+      },
+      {
+        "city": "Bikna",
+        "crafts": [
+          "Metalwork"
+        ],
+        "product_ids": [
+          42,
+          50
+        ]
+      },
+      {
+        "city": "Bishnupur",
+        "crafts": [
+          "Pottery",
+          "Textile"
+        ],
+        "product_ids": [
+          44,
+          113,
+          114,
+          115,
+          116
+        ]
+      },
+      {
+        "city": "Kolkata",
+        "crafts": [
+          "Basketry",
+          "Painting"
+        ],
+        "product_ids": [
+          46,
+          49,
+          109,
+          110,
+          111,
+          112
+        ]
+      },
+      {
+        "city": "Nadia",
+        "crafts": [
+          "Textile"
+        ],
+        "product_ids": [
+          47,
+          143
+        ]
+      },
+      {
+        "city": "Shantiniketan",
+        "crafts": [
+          "Leatherwork",
+          "Textile"
+        ],
+        "product_ids": [
+          41,
+          45,
+          144,
+          145
+        ]
+      }
+    ]
+  }
+]
